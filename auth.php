@@ -61,7 +61,7 @@ $options = [
 ];
 
 // Send request for API credentials
-$ch      = curl_init( 'https://'.$shopname.'.shoprenter.hu/admin/oauth/access_credential' );
+$ch      = curl_init( 'https://'.$shopname.'.myshoprenter.hu/admin/oauth/access_credential' );
 curl_setopt_array( $ch, $options );
 $content = curl_exec( $ch );
 $err     = curl_errno( $ch );
